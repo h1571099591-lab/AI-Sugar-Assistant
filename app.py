@@ -1,7 +1,6 @@
 import streamlit as st
 import base64
 from openai import OpenAI
-from dotenv import load_dotenv
 import os
 
 # 1. 加载 .env 文件中的API密钥
