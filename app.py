@@ -5,8 +5,7 @@ from dotenv import load_dotenv
 import os
 
 # 1. 加载 .env 文件中的API密钥
-load_dotenv()
-api_key = os.getenv("SILICONFLOW_API_KEY")
+api_key = st.secrets["SILICONFLOW_API_KEY"]
 
 # 2. 初始化硅基流动的客户端
 client = OpenAI(
