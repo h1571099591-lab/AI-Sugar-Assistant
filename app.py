@@ -8,10 +8,7 @@ import os
 api_key = st.secrets["SILICONFLOW_API_KEY"]
 
 # 2. 初始化硅基流动的客户端
-client = OpenAI(
-    api_key=api_key,
-    base_url="https://api.siliconflow.cn/v1"
-)
+client = OpenAI(api_key=api_key, base_url="https://api.siliconflow.cn/v1")
 
 # 3. 设置网页标题
 st.set_page_config(page_title="AI控糖助手", page_icon="🥗")
